@@ -1,6 +1,7 @@
 import React,{ use, useState, useEffect } from 'react'
 import Background from './components/WeatherBackground.jsx'
 
+
 const App = () => {
 
   const [weather, setWeather] = useState(null);
@@ -10,7 +11,7 @@ const App = () => {
   const [error, setError] = useState('');
 
 
-  const API_KEY = 'dcd7648937680cf57d5d8d50d8808435'
+  const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
 
   //https://api.openweathermap.org/data/2.5/weather?lat=${s.lat}&lon=${s.lon}&appid={API_KEY}&units=metric
   //http://api.openweathermap.org/geo/1.0/direct?q={query}limit=&appid={API_KEY}
