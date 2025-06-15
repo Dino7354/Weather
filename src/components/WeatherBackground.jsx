@@ -7,7 +7,7 @@ import ClearNight from '../assets/clearskynight.gif'
 import Fog from '../assets/fog.gif'
 import Cloudsday from '../assets/cloudday.gif'
 import CloudsNight from '../assets/cloudnight.gif'
-// import Video from '../assets/video.mp4'
+import Video from '../assets/video1.mp4'
 
 const WeatherBackground = ({ condition }) => {
   const gifs = {
@@ -21,7 +21,7 @@ const WeatherBackground = ({ condition }) => {
     Smoke: Fog,
     Fog,
     Haze: Fog,
-    // default: Video
+    default: Video
   };
 
   const getBackground = () => {
@@ -40,9 +40,9 @@ const WeatherBackground = ({ condition }) => {
 
   return (
     <div className='fixed inset-0 z-0 overflow-hidden'>
-      {background === video ? (
+      {background === Video ? (
         <video autoplay loop muted className='w-full h-full object-cover opacity-100 pointer-events-none animate-fade-in'>
-         <source src={video} type='video/mp4'/>
+         <source src={Video} type='video1/mp4'/>
         </video>
       ) : (
         <img src={background} alt="Weather-bg" className='w-full h-full object-cover opacity-20 pointer-events-none animate-fade-in' />
@@ -55,3 +55,4 @@ const WeatherBackground = ({ condition }) => {
   )
 }
 
+export default WeatherBackground;
