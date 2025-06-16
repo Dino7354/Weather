@@ -61,11 +61,11 @@ import React from "react";
 import Thunderstorm from "../assets/ThunderStorm.gif";
 import Rain from "../assets/Rain.gif";
 import Snow from "../assets/snow.gif";
-import ClearDay from "../assets/clearsky.gif";
-import ClearNight from "../assets/clearskynight.gif";
+import ClearDay from "../assets/ClearDay.gif";
+import ClearNight from "../assets/ClearNight.gif";
 import Haze from "../assets/Haze.gif";
-import CloudsDay from "../assets/cloudsDay.gif";
-import CloudsNight from "../assets/cloudsNight.gif";
+import CloudsDay from "../assets/CloudsDay.gif";
+import CloudsNight from "../assets/CloudsNight.gif";
 import Video from "../assets/video1.mp4";
 
 const WeatherBackground = ({ condition }) => {
