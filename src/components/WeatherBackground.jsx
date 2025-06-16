@@ -64,8 +64,8 @@ import Snow from "../assets/snow.gif";
 import ClearDay from "../assets/clearsky.gif";
 import ClearNight from "../assets/clearskynight.gif";
 import Haze from "../assets/Haze.gif";
-import CloudsDay from "../assets/cloudday.gif";
-import CloudsNight from "../assets/cloudnight.gif";
+import CloudsDay from "../assets/cloudsDay.gif";
+import CloudsNight from "../assets/cloudsNight.gif";
 import Video from "../assets/video1.mp4";
 
 const WeatherBackground = ({ condition }) => {
