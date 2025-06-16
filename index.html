@@ -1,11 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/weather-icon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="src/index.css" href="style">
-    <title>Weather App</title>
+    <link href="/src/index.css" rel="stylesheet" />
+    <title>🌤️ Weather App</title>
+
+    <script>
+      const titles = [
+        "🌤️ Weather App",
+        "☀️ Check Your Forecast",
+        "⛈️ Real-Time Weather",
+        "🌈 Stay Weather Ready",
+      ];
+      let index = 0;
+      setInterval(() => {
+        document.title = titles[index];
+        index = (index + 1) % titles.length;
+      }, 2500);
+    </script>
   </head>
   <body>
     <div id="root"></div>
